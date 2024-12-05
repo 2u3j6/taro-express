@@ -3,7 +3,6 @@ import { useLoad } from '@tarojs/taro'
 import './index.less'
 
 export default function Index () {
-  const a = 1
   useLoad(() => {
     console.log('Page loaded.')
   })
