@@ -1,0 +1,16 @@
+{
+  "extends": ["taro/react"],
+  "parser": "@babel/eslint-parser",
+  "rules": { //用来覆盖extends的规则
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "no-unused-vars": ["error"],
+    "no-mixed-spaces-and-tabs":2,//不允许空格和tab混合使用
+    "no-debugger":2,//不允许使用debugger
+    "space-infix-ops":2,//操作符前后空格
+    "space-before-blocks":2,//块语句前后空格
+    "indent":["error",2,{"SwitchCase":1}],//缩进使用2个空格
+    "jsx-quotes":["error","prefer-double"],//jsx引号使用双引号
+    "import/first":0//消除绝对路径必须要在相对路径前面引入的限制
+  }
+}
